@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+    <script>
+        window.onload = function () {
+            let aLi = document.querySelectorAll('ul li');
+            // let arrLi = [].slice.call(aLi);//ES5之前的方法
+            // let arrLi = Array.from(aLi);//ES5方法
+            let arrLi = [...aLi];//ES6类数组转换为数组
+            arrLi.push(666);
+            console.log(arrLi);
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+        <li>44</li>
+        <li>55</li>
+    </ul>
+</body>
+</html>
