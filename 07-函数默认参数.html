@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<script>
+    // function show({x=0,y=0} = {}) {
+    //     console.log(x,y);
+    // }
+    // show();
+
+    // function showArr([a,b,c]) {
+    //     console.log(a,b,c);
+    // }
+    // console.log(showArr([1,5,8]));
+
+    function show(a,b,...c) {
+        console.log(a,b,c);
+    }
+    show(1,2,4,5,6);
+
+    let data = [1,2,3,4,5,6];
+    // let dataArr = [...data];
+    let dataArr = Array.from(data);
+    console.log(data,dataArr);
+</script>
+</body>
+</html>

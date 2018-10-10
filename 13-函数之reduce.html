@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<script>
+    let arr = [1,2,3,4,5,6,7,8,9,10];
+    let res = arr.reduce((prev,cur,index,arr) => {
+        return prev + cur;
+    });
+    console.log(res);
+
+    let arr1 = [2,4];
+    let power = arr1.reduce((prev,cur,index,arr) => {
+        return Math.pow(prev,cur);
+    })
+    console.log(power);
+</script>
+</body>
+</html>

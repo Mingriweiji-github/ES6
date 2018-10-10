@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Var-Let-Const</title>
+</head>
+<body>
+    <script>
+       // {
+       //     let a = 12;
+       //     {
+       //         let a = 20;
+       //     }
+       //     console.log(a);
+       //     for (let i=0;i<3;i++){
+       //         let i = 5;
+       //         console.log(i);
+       //     }
+       // }
+
+       //  const arr = ['apple','banner'];
+       //  arr.push('pear');
+       //  console.log(arr);
+
+        //定义不可修改的数组
+        const arr2 = Object.freeze(['apple','banner']);
+        arr2.push('pear');
+        console.log(arr2);
+
+
+    </script>
+</body>
+</html>

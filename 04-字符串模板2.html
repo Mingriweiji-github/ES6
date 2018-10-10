@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串模板</title>
+    <script>
+        let data = [
+            {title:"锐意进取，展现新气象新担当新作为",read:1},
+            {title:"治国有常民为本  解说词",read:2},
+            {title:"坚定不移将改革进行到底 述评：为世界谋大同",read:3},
+            {title:"原公安消防部队、武警森林部队停用武警制式服装",read:5},
+            {title:"国家医保局：17种抗癌药纳入医保报销目录",read:6},
+        ];
+        window.onload = function () {
+            let olu = document.querySelector('#ul1');
+            for (let i=0;i<data.length;i++){
+                let oli = document.createElement('li');
+                oli.innerHTML='<span>' + data[i].title + '</span>\n' +
+                                '<span>阅读人数:' +data[i].read + '</span>\n' +
+                                '<a href="javaScript">详情</a>';
+                olu.appendChild(oli);
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id='ul1'>
+
+    </ul>
+</body>
+</html>

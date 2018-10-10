@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<script>
+    let arr = [
+        {title:'apple',price:10,num:100},
+        {title:'pear',price:5,num:200},
+        {title:'banner',price:3,num:100},
+    ];
+    let data = arr.filter((item,index,arr) => {
+        return item.num === 200;
+    });
+    console.log(data);
+
+</script>
+</body>
+</html>
