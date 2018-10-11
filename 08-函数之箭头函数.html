@@ -6,29 +6,24 @@
 </head>
 <body>
 <script>
-    // function show(a,b) {
-    //     return a+b;
-    // }
-    // console.log(show(15,5));
+    let lily = {
+        name:'lucy',
+        hobbies:['Coding','Sleeping','Shopping'],
+        // printHobbies:function () {
+        //     // console.log(this);
+        //     var self = this;
+        //     this.hobbies.map(function (hobby) {
+        //         console.log(`${self.name} loves ${hobby}`);
+        //     })
+        // }
 
-    // let show = (a,b) => a + b;
-    // console.log(show(15,5));
-
-    // var id = 12;
-    // let json = {
-    //     id:1,
-    //     show:function () {
-    //         setTimeout(() => {
-    //             alert(this.id);
-    //         },2000);
-    //     }
-    // };
-    // json.show();
-
-    function show(a,b,c,) {
-        console.log(a,b,c);
+        printHobbies:function () {
+            this.hobbies.map((hobby) => {
+                console.log(`${this.name} loves ${hobby}`);
+            })
+        }
     }
-    show(1,2,3,);
+    lily.printHobbies();
 </script>
 </body>
 </html>
