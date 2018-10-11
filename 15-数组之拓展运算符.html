@@ -2,25 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Function</title>
-    <script>
-        window.onload = function () {
-            let aLi = document.querySelectorAll('ul li');
-            // let arrLi = [].slice.call(aLi);//ES5之前的方法
-            // let arrLi = Array.from(aLi);//ES5方法
-            let arrLi = [...aLi];//ES6类数组转换为数组
-            arrLi.push(666);
-            console.log(arrLi);
-        }
-    </script>
+    <title>Spread Operator Intro</title>
 </head>
 <body>
-    <ul>
-        <li>11</li>
-        <li>22</li>
-        <li>33</li>
-        <li>44</li>
-        <li>55</li>
-    </ul>
+<script>
+     const yougers = ['A','B','C'];
+     const olders = ['D','E','F'];
+
+     const members = [...yougers,'HAHA',...olders];
+
+
+     console.log(members);
+</script>
 </body>
 </html>
