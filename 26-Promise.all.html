@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promis.all(里面放的是数组)</title>
+    <script>
+        let p1 = Promise.resolve('aaa');
+        let p2 = Promise.resolve('bbb');
+        let p3 = Promise.resolve('ccc');
+        let p4 = Promise.resolve('ddd');
+
+        //Promise.all必须保证所有的promise都是resolve状态
+        let p = Promise.all([p1,p2,p3,p4]);
+        p.then(res => {
+            console.log(res);
+
+            let [res1,res2,res3] = res;
+            console.log(res1);
+
+        }).catch(err => {
+            console.log(err);
+        })
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

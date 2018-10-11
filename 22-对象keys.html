@@ -19,14 +19,17 @@
             b:2,
             c:3
         }
-        for (let key of keys(json)){
-            console.log(key);
-        }
-        for (let value of values(json)){
-            console.log(value);
-        }
+        // for (let key of keys(json)){
+        //     console.log(key);
+        // }
+        // for (let value of values(json)){
+        //     console.log(value);
+        // }
         for (let entry  of entries(json)){
-            console.log(entry);
+            // console.log(entry);
+        }
+        for (let [key,value] of entries(json)) {
+            console.log(key,value);
         }
 
 
